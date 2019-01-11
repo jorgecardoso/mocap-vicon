@@ -1,0 +1,15 @@
+{
+  "/sequenceFile": {"text": "C:\\Users\\jorge\\Desktop\\MoCap\\viconSkeletonOSCPlayer\\body.txt"},
+  "/markerName": {"text": "/RHEL_R_Foot$RHEL"},
+  "/playFrameRate": {
+    "min": 0.10000000149011612,
+    "max": 60,
+    "value": 30
+  },
+  "/timeLinePosition": {
+    "min": 0,
+    "max": 885,
+    "value": 486
+  },
+  "/bundleOSCMessages": {"value": 1}
+}
