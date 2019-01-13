@@ -1,6 +1,6 @@
 {
-  "/sequenceFile": {"text": "C:\\Users\\jorge\\Desktop\\MoCap\\viconSkeletonOSCPlayer\\body.txt"},
-  "/markerName": {"text": "/RHEL_R_Foot$RHEL"},
+  "/sequenceFile": {"text": "C:\\Users\\jorge\\Desktop\\mocap-vicon\\viconSkeletonOSCPlayer\\body.txt"},
+  "/markerName": {"text": "/LKNE_L_Femur$LKNE"},
   "/playFrameRate": {
     "min": 0.10000000149011612,
     "max": 60,
@@ -9,7 +9,7 @@
   "/timeLinePosition": {
     "min": 0,
     "max": 885,
-    "value": 486
+    "value": 200
   },
   "/bundleOSCMessages": {"value": 1}
 }

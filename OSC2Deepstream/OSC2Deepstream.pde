@@ -12,8 +12,9 @@ DeepstreamClient deepstreamClient;
 HashMap<String, String> oscMap = new HashMap();
 
 void setup() {
-    size(800, 600);
+    size(100, 100);
     oscMap.put("/ARIEL_Head$ARIEL", "body");
+    oscMap.put("/C7_Thorax$C7", "body");
     oscMap.put("/LIHAND_L_Wrist$LIHAND", "body");
     oscMap.put("/RIHAND_R_Wrist$RIHAND", "body");
     oscMap.put("/T10_Thorax$T10", "body");
@@ -25,8 +26,8 @@ void setup() {
     oscP5 = new OscP5(this, 54321);
 
     try {
-        deepstreamClient = new DeepstreamClient("deepstream.glitch.me:80");
-        println("Creaated");
+        deepstreamClient = new DeepstreamClient("wss://deepstream.glitch.me");
+        println("Created Deepstream client");
     } 
     catch(URISyntaxException urise) {
         urise.printStackTrace();
@@ -41,7 +42,7 @@ void setup() {
     );
 
     LoginResult loginResult = deepstreamClient.login();
-    println(loginResult.loggedIn());
+    println("Logged in to Deepstream: " + loginResult.loggedIn());
 
     /*
     Record record = deepstreamClient.record.getRecord("test-record");
