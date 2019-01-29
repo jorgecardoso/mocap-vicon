@@ -23,8 +23,6 @@ void setup() {
     oscMap.put("/LELB_L_Humerus$LELB", "body");
     
 
-    oscP5 = new OscP5(this, 54321);
-
     try {
         deepstreamClient = new DeepstreamClient("wss://deepstream.glitch.me");
         println("Created Deepstream client");
@@ -53,6 +51,9 @@ void setup() {
      record.set(data);
      
      deepstreamClient.event.emit( "frame", data);*/
+     
+    oscP5 = new OscP5(this, 54321);
+
 }
 
 void draw() {
@@ -64,6 +65,7 @@ void oscEvent(OscBundle theBundle) {
     for (OscMessage m : theBundle.get()) {
         //println("Processing message: ", m.getAddress());
         String objectName = oscMap.get(m.getAddress());
+        objectName = "body";
         if (objectName == null) continue;
 
         //println("Adding message to object: ", objectName);
